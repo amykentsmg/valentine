@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 14 февраля!</title>
+    <link rel="stylesheet" href="val14.css">
+</head>
+<body>
+    <div class="container">       
+        <button id="surpriseBtn" class="btn">Нажми</button>
+        <div id="surpriseBlock" class="surprise hidden">
+            <div class="photo-frame">
+                <img src="vm.jpg" alt="Фото лучшего" class="valentine-photo">
+            </div>
+            <h2 class="message">С 14 февраля!</h2>
+            <p class="submessage">Виталий Михайлович, вы лучший преподаватель! ❤️</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('surpriseBtn').addEventListener('click', () => {
+            document.getElementById('surpriseBlock').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
